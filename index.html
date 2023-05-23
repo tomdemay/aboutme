@@ -2,101 +2,434 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tom DeMay - Software Engineer</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom DeMay - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
-  <header>
-    <div class="header-background"></div>
-    <nav>
-      <div class="logo">Thomas J. DeMay, II</div>
-      <ul class="navigation">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="about" class="section">
-    <div class="container">
-      <div class="content">
-        <div class="profile-picture">
-            <h1>About Me</h1>
-            <img src="tomdemayheadshot.jpg" alt="Tom DeMay Headshot" class="headshot">
-        </div>
-        <div class="text">
-          <p>
-            I would like to introduce myself. My name is Tom DeMay. I am a Software Engineer currently working at Amazon AWS.
-            I would like to tell you a little about me and why I feel I would be a great addition to your company.
-          </p>
-          <p>
-            I have been a Software Engineer for nearly 30 years with a tremendously wide range of experiences; as an individual contributor,
-            technical lead, and management. Ultimately I am a hands-on developer. I am much more than just a coder. I am a problem solver.
-            Bring whatever problem you have to me, and I will own it from inception to completion. I will build the necessary tools,
-            systems, and teams and lead them to accomplish any goal.
-          </p>
-          <p>
-            I have a passion for the software factory process. I always look for ways to be more efficient, write maintainable code,
-            improve team and organization communication, deliver consistent and reliable estimates, and mentor junior developers.
-            Usually, I naturally evolve into a technical lead once I have acquired the team’s domain knowledge. I maintain a great relationship
-            with all my previous employers and team mates. I refactor relentlessly. I enjoy collaborating with other engineers and managers
-            I can learn from.
-          </p>
-          <p>
-            I am aggressive about acquiring new skills and constantly learning. Fresh out of high school in 1989, before I knew what I wanted to do,
-            I studied and passed the tests to obtain a series 6 and 63 license to sell securities within 2 months. In 2000, I got a private pilot’s
-            license within 3 months. I am a self-taught musician having performed live for 11 years at a high level playing the piano, keyboards,
-            guitar, harmonica, banjo, and even singing. I am a self-taught software engineer. By my late 20s, I had already been in engineering management,
-            published by Advisor Publications, and spoke on software engineering principals at local user group meetings. When I was 30, I decided to get
-            my computer science degree. I completed 4 years of school in one year and maintained a GPA of 4.0. In 2003, I built www.discountcasinogear.com
-            as an experiment to learn how to build web applications. It became one of the leading sites in its industry, consistently generating half
-            a million in revenue annually until I sold it for a profit in 2011. The site is still there and claims to be the largest supplier of gaming
-            equipment as many of the site’s competitors have come and gone.
-          </p>
-          <p>
-            I have a reputation for having high standards, writing well-designed code that is maintainable, and I work well with others.
-            I have bailed out a number of failing projects, received numerous awards for doing so, and I hold a patent. I mentor and develop
-            the skills of junior and struggling engineers. I enjoy refactoring code. In one case, I improved performance by 3,951%.
-            In that particular case, code that initially took 6 hours to run before it failed, consuming all the computer’s resources and crashing,
-            was refactored to complete in 6 minutes using only 40MB of memory.
-          </p>
-          <p>
-            As you can see, I am an aggressive learner and have a passion for continued education. I have taught myself C/C++, .NET, C#,
-            Windows and Linux platforms, Java, Python, PowerShell, bash, Ruby, Regular Expressions, classic ASP, HTML/CSS, SQL and No-SQL,
-            various back-end databases, and cloud computing just to name a few. I am currently working on mastering front-end web development
-            using Java Spring, Spring Boot, Angular, React.js, MVC and LAMP stacks and working towards my AWS and Azure certifications,
-            then I plan to move on to machine learning and AI.
-          </p>
-          <p>
-            As you can tell, I am very proud of my history and accomplishments. I am excited to share with you my many success stories
-            and even some not so successful stories that became learning opportunities for me. I honestly believe I can fit in well
-            in any organization in a variety of different roles due to my passion for software engineering and for learning.
-            I am open to any kind of development. Above all, I like being creative and learning, which I believe would be a tremendous
-            asset to your organization. Thank you for your time and your consideration.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <header>
+        <div class="header-background"></div>
+        <nav>
+            <div class="logo">Thomas J. DeMay, II</div>
+            <input type="checkbox" id="toggle-nav" class="toggle-nav">
+            <label for="toggle-nav" class="toggle-nav-label">
+                <span class="menu-icon">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </span>
+            </label>
+            <ul class="navigation">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <footer>
-    <div class="container">
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-        <p>
-          Email: demay.tom@gmail.com<br>
-          Phone: 703-283-7945<br>
-          LinkedIn: <a href="https://www.linkedin.com/in/demaytom/">Tom DeMay</a><br>
-          Recommendations: <a href="https://www.linkedin.com/in/demaytom/details/recommendations/">LinkedIn Recommendations</a><br>
-          GitHub: <a href="https://github.com/tomdemay">Tom DeMay on GitHub</a>
-        </p>
-      </div>
-    </div>
-  </footer>
+    <div class="underheader">
+        <section id="about" class="section">
+            <div class="container">
+                <div class="profile-picture">
+                    <h1>About Me</h1>
+                    <img src="tomdemayheadshot.jpg" alt="Tom DeMay Headshot" class="headshot">
+                </div>
+                <div class="text">
+                    <p>
+                        Allow me to introduce myself. My name is Tom DeMay, and I am a Senior Software Engineer
+                        currently
+                        employed at Amazon AWS. I would like to share a bit about my background and explain why I
+                        believe
+                        I would be a valuable addition to any organization.
+                    </p>
+                    <details open>
+                        <summary>Professional Experience</summary>
+                        <div class="content">
+                            <p>
+                                With nearly 30 years of experience as a Software Engineer, I have accumulated a diverse
+                                range of
+                                expertise. Throughout my career, I have served in various roles, including individual
+                                contributor,
+                                technical lead, and management positions. While I possess a deep understanding of
+                                coding, I also
+                                thrive as a problem solver. No matter the challenge at hand, I take full ownership, from
+                                inception
+                                to completion, leveraging my ability to build the necessary tools, systems, and teams
+                                required to
+                                achieve the desired goals.
+                            </p>
+                            <p>
+                                I am particularly passionate about the software development process and continuously
+                                seek ways to
+                                enhance efficiency, write maintainable code, improve team and organizational
+                                communication, deliver
+                                consistent and reliable estimates, and mentor junior developers. As I acquire domain
+                                knowledge, I
+                                naturally transition into a technical leadership role. My previous employers and
+                                colleagues hold me
+                                in high regard, appreciating my commitment to refactoring and my collaborative approach
+                                when working
+                                alongside other engineers and managers.
+                            </p>
+                            <p>
+                                My insatiable appetite for learning has always driven me to acquire new skills. For
+                                instance, shortly
+                                after completing high school in 1989, in just under 3 months I obtained a series 6 and
+                                63 license to sell
+                                securities. In 2000, I earned a private pilot's license in a span of three months. In
+                                addition
+                                to my accomplishments outside of software engineering, I am entirely self-taught in the
+                                field of software
+                                engineering. By my late
+                                20s, I had already assumed engineering management roles, published works on software
+                                engineering
+                                principles, and delivered speeches at local user group meetings. At the age of 30, I
+                                pursued a computer
+                                science degree, completing four years of coursework in just one year while maintaining a
+                                GPA of 4.0. In
+                                2003, I embarked on building www.discountcasinogear.com as an experimental project to
+                                learn how to build web sites,
+                                which eventually
+                                became one of the leading sites in its industry, consistently generating annual revenue
+                                in the range of
+                                half a million dollars until I successfully sold it for a profit in 2011. The site,
+                                still operational, proudly asserts
+                                its status as the largest supplier of gaming equipment, outlasting many of its
+                                competitors.
+                            </p>
+                            <p>
+                                My reputation is built on maintaining high standards, crafting well-designed and
+                                maintainable code, and effectively
+                                collaborating with others. I have rescued several failing projects, receiving numerous
+                                accolades for my efforts,
+                                and hold a patent. Mentoring and developing the skills of junior and struggling
+                                engineers are among my passions.
+                                Refactoring code is a task I relish, having achieved remarkable performance
+                                improvements, such as a 3,951% boost in
+                                one instance. Previously, code that originally took 6 hours to run before crashing due
+                                to resource consumption was
+                                refactored to complete in just 6 minutes, utilizing only 40MB of memory.
+                            </p>
+                            <p>
+                                As evident from my journey, I possess an unwavering commitment to continuous education.
+                                I have taught myself a
+                                multitude of technologies, including C/C++, .NET, C#, Windows and Linux platforms, Java,
+                                Python, PowerShell,
+                                bash, Ruby, Regular Expressions, classic ASP, HTML/CSS, SQL and No-SQL databases, and
+                                cloud computing, to name
+                                a few. Currently, I am actively honing my skills in front-end web development using Java
+                                Spring, Spring Boot,
+                                Angular, React.js, MVC, and LAMP stacks. I am also working towards attaining my AWS and
+                                Azure certifications,
+                                with future plans to delve into machine learning and AI.
+                            </p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Personal Experience</summary>
+                        <div class="content">
+                            <details>
+                                <summary>Family</summary>
+                                <div class="content">
+                                    <p>I was born in 1968 in Camden, New Jersey. We lived in Long Island, New York at
+                                        the time. I was the third
+                                        of four children born to Robert and Doris DeMay. The oldest is my sister Dawn. I
+                                        have
+                                        an older brother Robert and a younger brother Christopher.
+                                    </p>
+                                    <p>
+                                        I have no memories of living in Long Island as I was to young when we moved to
+                                        Margate Florida where we
+                                        lived up until right before I entered 2nd grade. We lived there for my 2nd
+                                        through 5th grade years and
+                                        then we moved to Springfield, Virginia as I entered 6th grade and we have been
+                                        here ever since.
+                                    </p>
+                                    <p>
+                                        I graduated from Hayfield High School in Alexandria, Virginia in 1986 and in
+                                        1991 I married the most wonderful
+                                        women of all, Julie DeMay. We lived in Ashburn for about 15 years before moving
+                                        out to Winchester, Virginia
+                                        in an effort to reduce our living expenses as Ashburn is a very expensive area
+                                        to live.
+                                    </p>
+                                    <p>In 1997 we welcomed our first child Melissa (Missy) DeMay. We welcomed our
+                                        daughter Rachel DeMay in 2000 and
+                                        our first son 2 years later in 2002. We were done having children until 12 years
+                                        later we were blessed
+                                        with our youngest son Oliver DeMay in 2014.
+                                    </p>
+                                    <p>When my oldest was 14, we took custody of my sister's son Andrew DeMay. Andrew is
+                                        3 days older than Missy.
+                                        We raised him as our own child and through him we are expecting our first grand
+                                        child.
+                                    </p>
+                                    <p>
+                                        In summary, I take great pride in my history and accomplishments. I am eager to
+                                        share my
+                                        numerous success stories
+                                        and even the valuable lessons learned from less successful endeavors. I
+                                        genuinely
+                                        believe that my passion for
+                                        software engineering and continual learning makes me a versatile asset in any
+                                        organization. I am open to diverse
+                                        development opportunities and find joy in creativity and learning. I trust that
+                                        my
+                                        profile aligns well with your
+                                        organization's aspirations. Thank you for your time and consideration.
+                                    </p>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Music</summary>
+                                <div class="content">
 
-  <script src="script.js"></script>
+                                    <p>When I was 8 I asked my parents to sign me up for guitar lessons. So
+                                        naturally they signed me up for piano.
+                                        My parents felt that was a logical choice as I already showed an
+                                        interest for piano and started to teach
+                                        myself. I took lessons until I was 16, but never applied myself or
+                                        practice as I was disinterested in
+                                        the classic music I was being taught and wanted to study blues and jazz
+                                        and learn how to improvise.
+                                        I didn't know how to ask for it properly, so I was taught a little rag
+                                        time piano. In the late 90s I met
+                                        someone at Kits Jordan Music. He was playing exactly what I wanted to
+                                        learn. I asked for lessons. He gave
+                                        me two before taking my money and disappearing. But it was all I needed
+                                        as he introduced me to the
+                                        penatonic scale and I was off and running.
+                                    </p>
+                                    <p>
+                                        In the late 2000's I was asked if I could play keyboards in a local
+                                        band. Having never done that before
+                                        I thought, why not. They were really patient with me and showed me the
+                                        ropes. I went on to form my own bands
+                                        and play in a variety of local bands playing classic rock, blues and
+                                        even some country. I played at a high
+                                        level playing downtown at the Washington DC Cherry Blossom festival and
+                                        kicking off Massanutten, Virginia's
+                                        ski resort fall and winter sesson. One of my claim to fames was I got
+                                        the opportunity to play
+                                        "I Want You to Want Me" on stage with the song's creator Rick Nielson
+                                        from Cheap Trick at a hotel after
+                                        their performance at the Superdome down in New Orleans.
+                                    </p>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Finding My Path</summary>
+                                <div class="content">
+                                    <p>
+                                        I went straight to work after high school as I was just too immature to continue
+                                        my education in college having been a very poor student in high school.
+                                        I graduated with a 1.7 GPA. My parents had me tested and determined I was
+                                        just bored. I could do the work. I just didn't want to. Going to college then
+                                        would have been a waste of money. Especially considering that I didn't know
+                                        what I wanted to do for a career.
+                                    </p>
+                                    <p>
+                                        Personal computers were just starting to become affordable for wide spread use.
+                                        My Dad bought an 8088 and used it quite often. In 10th grade I took an
+                                        intro to programming course where we were taught basic programming.
+                                        The teacher was new to the subject being a math teacher with no computer
+                                        experience. So he was learning with us. But he couldn't learn at the pace
+                                        This was one class I was passionate about and did rather well in. The next year
+                                        I took a Cobal programming course.
+                                    </p>
+                                    <p>
+                                        Back then you were considered a Nerd if you were into computers. So I resisted
+                                        and pushed back against my Dad who often told me I will be a software engineer.
+                                        So I bounced around for a while. When I was 19 I thought I might want to be a
+                                        stock broker. So I picked up some books, and took the tests and within 2-3
+                                        months
+                                        I had obtained my series 6 and 63 license. But no one wanted financial advice
+                                        from an immature 19 year old punk kid so that didn't work out too well.
+                                    </p>
+                                    <p>
+                                        I went on to work in two different banks, a stock broker firm as a cashier and
+                                        then
+                                        an administrative assistant at Construction Specifications Institute where I
+                                        got the opportunity to pose as a hand model for an add running in their
+                                        magazine. It was kind of fun. It was there I started to play around with
+                                        programming.
+                                        I started writing applications for myself in basic and interacting with their
+                                        mainframes.
+                                    </p>
+                                    <p>
+                                        After my boss and I were laid off she put me in touch with her son who managed a
+                                        team
+                                        doing computer sales to the federal government. I joined the team but was soon
+                                        frustrated
+                                        by the
+                                        lack of software tools for the sales force to use. Our vendor's would send us
+                                        their
+                                        pricing on a disk every month and it was just thrown in the trash. We were
+                                        selling
+                                        Fox Software Fox Pro, so I was able to get a free copy and I started to write
+                                        database applications. I wrote something to manage my contacts, pricing, a
+                                        quotation
+                                        system and an order entry system. I found my path. I finally accepted I was a
+                                        developer down at heart and accepted a role at the company creating tools for
+                                        the whole company to use. In my early 20's I found myself managing 4 people
+                                        building internal systems. I was on my way.
+                                    </p>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>My Software Engineering Journey</summary>
+                                <div class="content">
+                                    <p>
+                                        Microsoft bought Fox Software to acquire their Rushmore technology to use to
+                                        build
+                                        Microsoft SQL Server and eventually released Microsoft Visual FoxPro. It was my
+                                        first
+                                        introduction to object oriented programming. I was hooked. I marketed myself
+                                        hard in the small FoxPro community. I
+                                        wrote articles for Advisor Publications, even getting the cover once. I spoke at
+                                        user
+                                        group meetings. But FoxPro was considered a 2nd rate programming language. So I
+                                        wanted
+                                        to learn more. I started teaching myself C/C++ and left the job to pursue an
+                                        opportunity
+                                        to work alongside some highly recognized names in the FoxPro community. It was
+                                        there
+                                        I was hoping to learn about System Design and Architecture. Client server
+                                        databases were
+                                        relatively new then. I started writing applications with Microsoft SQL Server on
+                                        the back
+                                        end. I wrote a few articles in Advisor Publications and spoke at a local user
+                                        group about how to do it.
+                                    </p>
+                                    <p>
+                                        I had no formal software engineering training. I was slinging code and I became
+                                        very anxious to learn. I started writing other articles and pursued my new dream
+                                        of becoming
+                                        a Software Engineer hard. I eventaully got my first break as a C/C++ engineer in
+                                        my early
+                                        30's working for a company that was eventually acquired by EMC (which is now
+                                        part of Dell).
+                                        I developed a reputation of being a hard worker, a skilled engineer and by my
+                                        early
+                                        30s I found myself managing again, leading a team of 6 people developing a
+                                        library that
+                                        200 other EMC developers would use to build the applications on top of. This was
+                                        a very
+                                        high profile job and very rewarding. It was here I got my first patent.
+                                    </p>
+                                    <p>
+                                        One of the benefits EMC's offered employees was continued education
+                                        reimbursement.
+                                        I took advantage of that and at 30, I went back to school to get my Bachelor's
+                                        in Computer
+                                        Information Systems. I was eager to get my degree quickly so I taught myself
+                                        most of the material
+                                        and took CLEP tests, tested out of classes, or put portfolios together
+                                        demonstrated I
+                                        knew the material being taugh so I could get life experience credits to get
+                                        credit for the class.
+                                        I completed 4 years of school and graduated Suma Cum Laude with a 4.0 average a
+                                        year later.
+                                    </p>
+                                    <p>
+                                        I worked at EMC for nearly 12 years. Moved on to a small start up company before
+                                        finding myself working
+                                        at Amazon AWS. Along the way I taught myself various other technologies and
+                                        programming languages.
+                                        My passion is refactoring code, mentoring more junior developers and just owning
+                                        the whole
+                                        software delivery process.
+                                    </p>
+                                    <p>
+                                        The rest is just history.... I was on my way.
+                                    </p>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Discount Casino Gear</summary>
+                                <div class="content">
+                                    <p>
+                                        In 2003 building web sites was the next hot thing. I wanted to learn, but had no
+                                        opportunities
+                                        where I worked. So I went off and my own and experiemented. I had started
+                                        building gaming tables
+                                        for me and my friends and decided I would build a web site to sell my tables. It
+                                        wasn't long
+                                        before an importer found me and asked to partner up. Within 6 months I had
+                                        launched
+                                        <a href="https://www.discountcasinogear.com/" target="_blank">Discount Casino
+                                            Gear
+                                            <i class="fas fa-external-link-alt fa-xs"></i></a> generating half a million
+                                        in revenue
+                                        consistently year after year until I sold it for a profit in 2011.
+                                    </p>
+                                    <p>
+                                        I had launched <a href="https://www.discountcasinogear.com/"
+                                            target="_blank">Discount Casino Gear
+                                            <i class="fas fa-external-link-alt fa-xs"></i></a> a year before the poker
+                                        craze really took off.
+                                        I was spending everything I made on cost per click advertising. I had no real
+                                        overhead as my
+                                        site was fully automated, sending orders to my supplier who dropped shipped
+                                        product for me,
+                                        sending out shipping information to customers and even automated building new
+                                        pages when new
+                                        products where released and even scrubbing my competitors web sites every night
+                                        and programmatically
+                                        adjusted pricing to undercut them. All I had to do was customer service. The
+                                        site was entrenched
+                                        and competitors came and went and <a href="https://www.discountcasinogear.com/"
+                                            target="_blank">Discount Casino Gear
+                                            <i class="fas fa-external-link-alt fa-xs"></i></a> is now one of the leading
+                                        gaming supply
+                                        web sites.
+                                    </p>
+
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Other Interests</summary>
+                                <div class="content">
+                                    * private pilot
+                                    * coach
+                                    * music (banjo etc)
+                                    * craft beers
+                                    * cloud computing
+                                    * learning
+
+                                </div></details>
+
+
+
+                        </div>
+                </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="left-column">
+                    <p>
+                        LinkedIn:<br>
+                        Recommendations:<br>
+                        GitHub:
+                    </p>
+                </div>
+                <div class="right-column">
+                    <p>
+                        <a href="https://www.linkedin.com/in/demaytom/" target="_blank">Tom DeMay <i
+                                class="fas fa-external-link-alt fa-xs"></i></a><br>
+                        <a href="https://www.linkedin.com/in/demaytom/details/recommendations/" target="_blank">LinkedIn
+                            Recommendations <i class="fas fa-external-link-alt fa-xs"></i></a><br>
+                        <a href="https://github.com/tomdemay" target="_blank">Tom DeMay on GitHub <i
+                                class="fas fa-external-link-alt fa-xs"></i></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
