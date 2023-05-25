@@ -223,7 +223,7 @@ nav {
   
   .expandable-content .content {
     display: none;
-    padding: 10px;
+    padding: 10px 0 10px;
     background-color: #f2f2f2;
     margin-top: 10px;
   }
@@ -237,11 +237,10 @@ nav {
     padding-bottom: 20px;
   }
   
-  /* Footer Styles */
   footer {
     background-color: #666;
     color: #fff;
-    padding: 10px 0;
+    padding: 0 0 20px;
     bottom: 0;
     width: 100%;
   }
@@ -279,16 +278,18 @@ nav {
     padding-left: 5px;
   }
 
-  .skills-list, .hobbies-list {
+  .skills-list, 
+  .hobbies-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 8px;
     align-items: flex-start;    
     list-style-position: outside;
-    padding-top: 10px;
+    padding: 10px 0;
   }
   
   .skills-list > li, 
+  .projects-list > li, 
   .hobbies-list > li
   {
     display: flex;
@@ -296,6 +297,12 @@ nav {
     padding-left: 1em;
     position: relative;
     line-height: 20px;
+  }
+
+  .projects-list > li {
+    padding-left: 1em;
+    position: relative;
+    list-style-type: none;
   }
 
   .skills-list > li:hover {
@@ -307,7 +314,7 @@ nav {
   .hobbies-list > li::before {
     position: absolute;
     content: '';
-    top: 0.5em;
+    top: 0.25em;
     left: 0; 
     width: 0.75em; 
     height: 0.75em;
@@ -322,31 +329,6 @@ nav {
   
   .skill-category:not(:first-child) {
     margin-top: 10px;
-  }
-
-  .projects-list > li {
-    padding-left: 1em;
-    position: relative;
-    padding-bottom: 0.5em;
-    list-style-type: none;
-  }
-
-  .projects-list > li:before {
-    position: absolute;
-    content: '';
-    top: 0.5em;
-    left: 0; 
-    width: 0.75em; 
-    height: 0.75em;
-    width: 10px;
-    height: 10px;
-    background: linear-gradient(to right, #946f00, #e9c351);
-    border-radius: 50%;
-    margin-right: 0.5em;
-  }  
-
-  .projects-list ul {
-    padding-left: 20px;
   }
 
   .toggle-nav {
