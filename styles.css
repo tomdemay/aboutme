@@ -144,10 +144,6 @@ nav {
     padding: 5px 0 5px 0;
   }
   
-  summary::-webkit-details-marker {
-    display: none;
-  }
-
   summary {
     cursor: pointer;
     justify-content: space-between;
