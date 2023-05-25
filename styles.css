@@ -287,9 +287,8 @@ nav {
     list-style-position: outside;
     padding: 10px 0;
   }
-  
+
   .skills-list > li, 
-  .projects-list > li, 
   .hobbies-list > li
   {
     display: flex;
@@ -299,18 +298,12 @@ nav {
     line-height: 20px;
   }
 
-  .projects-list > li {
-    padding-left: 1em;
-    position: relative;
-    list-style-type: none;
-  }
-
   .skills-list > li:hover {
     font-weight: bolder;
   }
 
   .skills-list > li:before, 
-  .projects-list > li:before, 
+  /* .projects-list > li:before, */
   .hobbies-list > li::before {
     position: absolute;
     content: '';
@@ -322,7 +315,142 @@ nav {
     border-radius: 50%;
     margin-right: 0.5em;
   }  
+/* original list... not working right
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 8px;
+    list-style-position: outside;
+    align-items: flex-start;    
+    padding: 10px 0;
+  }  
 
+  .projects-list > li {
+    padding-left: 1em;
+    padding: 5px;
+    line-height: 20px;
+    list-style-type: none;
+  }
+
+  .projects-list > li:before {
+    position: absolute;
+    content: '';
+    top: 0.25em;
+    left: 0; 
+    width: 0.75em; 
+    height: 0.75em;
+    background-image: linear-gradient(to right, #946f00, #e9c351);
+    border-radius: 50%;
+    margin-right: 0.5em;
+  }   */
+
+/*   cards that stand out and animated when hover over them
+     but it's 3 cards and doesn't adjust
+  .projects-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .projects-list > li {
+    background-color: #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }  
+
+  .projects-list > li:hover {
+    transform: translateY(-4px);
+    background-color: #999;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }   */
+
+
+/* I really like this... this is before messing with child list items
+  .projects-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 0;
+  }
+  
+  .projects-list > li {
+    background-color: #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  .projects-list > li:hover {
+    transform: translateY(-4px);
+    background-color: #bbb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 1);
+  }
+*/
+
+.projects-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 0;
+  }
+  
+  .projects-list > li {
+    background-color: #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  .projects-list > li:hover {
+    transform: translateY(-4px);
+    background-color: #ccc;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 1);
+  }
+  
+  .projects-list ul {
+    list-style-type: square;
+    padding: 0 0 0 20px;
+  }
+  
+  .projects-list li ul {
+    padding: 0 0 0 20px;
+  }
+  
+
+  .publication-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .publication-list li {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .publication-list li .title {
+    text-align: left;
+  }
+  
+  .publication-list li .date {
+    text-align: right;
+  }
+  
+
+  
+    
   .skill-category {
     font-weight: bold;
   }
