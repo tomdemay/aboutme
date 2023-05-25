@@ -10,16 +10,9 @@ body, h1, h2, h3, h4, p, ul, li, a {
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #666;
     color: #333;
     line-height: 1.5;
-    animation: backgroundAnimation 20s ease infinite;
-}
-
-@keyframes backgroundAnimation {
-    0% { background-position: center 0%; }
-    50% { background-position: center 100%; }
-    100% { background-position: center 0%; }
 }
 
 header {
@@ -120,8 +113,7 @@ nav {
     width: 75px;
     height: 80px;
     border-radius: 50%;
-    padding: 10px 10px 10px 10px;
-    margin: 0px 0px 20px 0px;
+    padding: 20px;
   }
 
   .headshot {
@@ -141,7 +133,7 @@ nav {
   }
 
   details {
-    padding: 5px 0 5px 0;
+    margin: 10px 0 10px 0;
   }
   
   summary {
@@ -204,7 +196,7 @@ nav {
     background-image: linear-gradient(to right, #946f00, #e9c351);
   }
 
-  .content {
+  .content, .headline {
     padding: 10px 10px 0px 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -212,9 +204,9 @@ nav {
   }
 
   
-  /* Section styles */
   .section {
-    background-color: #fff;
+    /* background-image: linear-gradient(to bottom right, #ffffff, black); */
+    background-color: #666;
     top: 60px;
     bottom: 140px;
     /* overflow-y: auto; */
@@ -311,6 +303,7 @@ nav {
   }
 
   .skills-list > li:before, 
+  .projects-list > li:before, 
   .hobbies-list > li::before {
     position: absolute;
     content: '';
@@ -318,8 +311,6 @@ nav {
     left: 0; 
     width: 0.75em; 
     height: 0.75em;
-    width: 10px;
-    height: 10px;
     background-image: linear-gradient(to right, #946f00, #e9c351);
     border-radius: 50%;
     margin-right: 0.5em;
@@ -333,9 +324,6 @@ nav {
     margin-top: 10px;
   }
 
-  .projects-list {
-  }
-  
   .projects-list > li {
     padding-left: 1em;
     position: relative;
@@ -365,9 +353,18 @@ nav {
     display: none;
   }
 
+  .headline {
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #aaaaaa;
+    margin: 0px 10px 25px 0px;
+    border-radius: 20px;    
+  }
 
-/* Existing CSS */
-@media only screen and (min-width: 601px) and (min-height: 550px) {
+
+  @media only screen and (min-width: 601px) and (min-height: 550px) {
+    
+      
+    
     .text {
         overflow:hidden;
     }
@@ -411,6 +408,7 @@ nav {
         bottom: 140px;
         overflow-y: auto;
         display: flex;
+        margin: 20px 0px 0px 20px;
     }
 
     footer {
@@ -471,7 +469,7 @@ nav {
     .navigation {
       display: none;
       padding: 10px;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.6);
       border-radius: 5px;
       position: absolute;
       top: 100%;
