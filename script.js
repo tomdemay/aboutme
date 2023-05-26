@@ -15,11 +15,11 @@ window.addEventListener('beforeprint', function() {
 //   });
 
   
-// Expand all <details> elements on page load
-window.addEventListener('DOMContentLoaded', function() {
-    var detailsElements = document.getElementsByTagName('details');
-    for (var i = 0; i < detailsElements.length; i++) {
-      detailsElements[i].setAttribute('open', '');
-    }
-  });
+// // Expand all <details> elements on page load
+// window.addEventListener('DOMContentLoaded', function() {
+//     var detailsElements = document.getElementsByTagName('details');
+//     for (var i = 0; i < detailsElements.length; i++) {
+//       detailsElements[i].setAttribute('open', '');
+//     }
+//   });
   
