@@ -6,14 +6,14 @@
     <!-- <meta http-equiv="refresh" content="5"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom DeMay - Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="print-styles.css" media="print">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" type="image/png" href="favicon.ico">
 </head>
 
 <body>
     <header>
-        <div class="header-background"></div>
         <nav>
             <div class="logo-full">Thomas J. DeMay, II</div>
             <div class="logo-short">Tom DeMay</div>
@@ -39,19 +39,18 @@
             </div>
             <div class="container">
                 <div class="text">
-                    <div class="headline">
+                    <div id="aboutme" class="headline">
                         <h1>About Me</h1>
                         <p>
                             Allow me to introduce myself. My name is Tom DeMay, and I am a Senior Software Engineer
-                            currently
-                            employed at Amazon AWS. I would like to share a bit about my background and explain why I
-                            believe
-                            I would be a valuable addition to any organization.
+                            currently employed at Amazon AWS. I would like to share a bit about my background and
+                            explain why I believe I would be a valuable addition to any organization.
                         </p>
                     </div>
                     <details open>
                         <summary>Professional Experience</summary>
-                        <div class="content">
+                        <a name="professional"></a>
+                        <div id="professionalexperience" class="content">
                             <p>
                                 With nearly 30 years of experience as a Software Engineer, I have accumulated a diverse
                                 range of
@@ -136,10 +135,12 @@
                     </details>
                     <details>
                         <summary>Personal Experience</summary>
-                        <div class="content">
+                        <a name="personal"></a>
+                        <div id="personalexperience" class="content">
                             <details>
                                 <summary>Finding My Path</summary>
-                                <div class="content">
+                                <a name="path"></a>
+                                <div id="findingmypath" class="content">
                                     <p>
                                         After high school, I made the decision to dive straight into the workforce. I
                                         felt too immature to continue my education in college, especially considering I
@@ -197,7 +198,9 @@
                             </details>
                             <details>
                                 <summary>My Software Engineering Journey</summary>
-                                <div class="content">
+                                <a name="mysoftwareengineeringjourney"></a>
+                                <a name="softwareengineering"></a>
+                                <div id="journey" class="content">
                                     <p>
                                         Microsoft acquired Fox Software to utilize their Rushmore technology for
                                         building Microsoft SQL Server, which eventually led to the release of Microsoft
@@ -247,7 +250,9 @@
                             </details>
                             <details>
                                 <summary>Poker and Discount Casino Gear</summary>
-                                <div class="content">
+                                <a name="poker"></a>
+                                <a name="pokeranddiscountcasinogear"></a>
+                                <div id="discountcasinogear" class="content">
                                     <p>
                                         In 2003, web development became the next big thing, and I was eager to learn.
                                         However, there were no opportunities for me to do so in my current workplace.
@@ -303,7 +308,7 @@
                             </details>
                             <details>
                                 <summary>Family</summary>
-                                <div class="content">
+                                <div id="family" class="content">
                                     <p>
                                         I was actually born way back in 1968 in Camden, New Jersey, but we
                                         lived in Long Island, New York at the time. I'm the third out of four children
@@ -349,7 +354,7 @@
                             </details>
                             <details>
                                 <summary>Music</summary>
-                                <div class="content">
+                                <div id="music" class="content">
                                     <p>
                                         When I was just 8 years old, I had a strong desire to learn guitar. So, I asked
                                         my parents to sign me up for guitar lessons. Naturally, they enrolling me in
@@ -411,7 +416,7 @@
                             </details>
                             <details>
                                 <summary>Aviation</summary>
-                                <div class="content">
+                                <div id="aviation" class="content">
                                     <p>
                                         In the year 2000, my path crossed with an individual who was immersed in the
                                         pursuit of their pilot's license. Intrigued by the prospect of taking flight, I
@@ -441,7 +446,10 @@
                             </details>
                             <details>
                                 <summary>Sports and Coaching</summary>
-                                <div class="content">
+                                <a name="sportsandcoaching"></a>
+                                <a name="coaching"></a>
+                                <div id="sports" class="content">
+                                    <div></div>
                                     <p>
                                         When I was eight years old in the mid-seventies, during the Pittsburgh Steelers'
                                         dominance in the NFL, I played my first season of football. Our team was called
@@ -474,7 +482,12 @@
                             <details>
                                 <summary>Other interests: Craft Beers, Cloud Computing and Learning (not necessarily in
                                     that order)</summary>
-                                <div class="content">
+                                <a name="craftbeers"></a>
+                                <a name="cloudcomputing"></a>
+                                <a name="learning"></a>
+                                <a name="otherinterests"></a>
+                                <a name="craftbeerscloudcomputingandlearning"></a>
+                                <div id="other" class="content">
                                     <p>
                                         Craft beer has been a long-standing passion of mine, even before it gained
                                         widespread popularity. I consider myself fortunate to have had Old Dominion
@@ -532,33 +545,21 @@
                         </div>
                 </div>
         </section>
-
-        <footer>
-            <div class="container">
-                <div class="left-column">
-                    <p>
-                        LinkedIn:<br>
-                        Recommendations:<br>
-                        GitHub:<br>
-                        SoundCloud:
-                    </p>
-                </div>
-                <div class="right-column">
-                    <p>
-                        <a href="https://www.linkedin.com/in/demaytom/" target="_blank">Tom DeMay <i
-                                class="fas fa-external-link-alt fa-xs"></i></a><br>
-                        <a href="https://www.linkedin.com/in/demaytom/details/recommendations/" target="_blank">LinkedIn
-                            Recommendations <i class="fas fa-external-link-alt fa-xs"></i></a><br>
-                        <a href="https://github.com/tomdemay" target="_blank">Tom DeMay on GitHub <i
-                                class="fas fa-external-link-alt fa-xs"></i></a><br>
-                        <a href="https://soundcloud.com/tom-demay/sets/featured-tracks" target="_blank">Stream Tom
-                            DeMay's Music <i class="fas fa-external-link-alt fa-xs"></i></a><br>
-                        </a>
-                    </p>
-                </div>
+        <footer class="no-page-break">
+            <div class="table">
+              <div class="cell column-one">LinkedIn:</div>
+              <div class="cell column-two"><a href="https://www.linkedin.com/in/demaytom/" target="_blank">Tom DeMay <i class="fas fa-external-link-alt fa-xs"></i></a></div>
+              <div class="cell column-one">GitHub:</div>
+              <div class="cell column-two"><a href="https://github.com/tomdemay" target="_blank">Tom DeMay on GitHub <i class="fas fa-external-link-alt fa-xs"></i></a></div>
+              <div class="cell column-one">Recommendations</div>
+              <div class="cell column-two"><a href="https://www.linkedin.com/in/demaytom/details/recommendations/" target="_blank">LinkedIn Recommendations <i class="fas fa-external-link-alt fa-xs"></i></a></div>
+              <div class="cell column-one">SoundCloud:</div>
+              <div class="cell column-two"><a href="https://soundcloud.com/tom-demay/sets/featured-tracks" target="_blank">Stream Tom DeMay's Music <i class="fas fa-external-link-alt fa-xs"></i></a></div>
             </div>
         </footer>
     </div>
 </body>
+
+<script src="script.js"></script>
 
 </html>
