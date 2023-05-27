@@ -3,8 +3,12 @@
     --secondary-color: rgb(121, 212, 241);
 }
 
-.address {
-    display: none;
+.address, 
+.left-paine, 
+.profile-picture > h3,
+.profile-picture > ul
+{
+    display: none
 }
 
 /* Reset styles */
@@ -115,21 +119,17 @@ nav {
     top: 0px;
     margin: 10px 0 5px 0;
     float: left;
-    width: 75px;
+    width: 100px;
     height: 80px;
     border-radius: 50%;
     padding: 20px;
 }
 
 .headshot {
-    width: 80px;
+    width: 100px;
     height: auto;
     border-radius: 50%;
     animation: rotateAnimation 5s linear infinite;
-}
-
-.left-paine {
-    display: none;
 }
 
 @keyframes rotateAnimation {
@@ -256,6 +256,7 @@ footer a {
 
 footer a:hover {
     font-weight: bolder;
+    color: #fff;
 }
 
 .skills-list,
@@ -397,6 +398,7 @@ footer a:hover {
 
     .left-paine a:hover {
         font-weight: bold;
+        color: white;
     }
 
     @keyframes moveUpDown {
@@ -421,6 +423,44 @@ footer a:hover {
         border-radius: initial;
         padding: 20px 10px 0 10px;
         /* animation: moveUpDown 3s ease-in-out infinite alternate;         */
+    }
+
+    .profile-picture > h3 {
+        display: initial;
+        font-weight: normal;
+        font-size: 1.2em;
+        color: var(--secondary-color);
+    }
+
+    .profile-picture > ul li::before {
+        display: inline-flex;
+        content: '';
+        width: 0.75em;
+        height: 0.75em;
+        background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .profile-picture > ul {
+        display: initial;
+        list-style-type: none;
+    }
+
+    .profile-picture > ul a {
+        text-decoration: none;
+        color: var(--secondary-color)
+    }
+
+    .profile-picture > ul li {
+        text-indent: -20px;
+        padding-left: 20px;
+        font-size: 0.85em;
+    }
+
+    .profile-picture > ul a:hover {
+        font-weight: bold;
+        color: #fff;
     }
 
     .headshot {

@@ -8,7 +8,9 @@ nav,
 footer,
 .headline>h1,
 .soundcloudplaylist, 
-.left-paine
+.left-paine, 
+.profile-picture > h3,
+.profile-picture > ul
 {
     display: none
 }
@@ -91,8 +93,12 @@ summary span.right {
     padding: 0 0 0 5px;
 }
 
-.content,
 .headline {
+    text-align: right;
+}
+
+.content
+{
     padding: 5px 0 5px 5px;
 }
 
