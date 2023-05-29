@@ -129,7 +129,7 @@ nav {
     width: 100px;
     height: auto;
     border-radius: 50%;
-    animation: rotateAnimation 5s linear infinite;
+    /*animation: rotateAnimation 5s linear infinite;*/
 }
 
 @keyframes rotateAnimation {
