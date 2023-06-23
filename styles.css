@@ -70,6 +70,7 @@ nav {
 .container {
     padding: 10px;
     margin: 0px;
+    width: 100%;
 }
 
 .logo-full {
@@ -212,6 +213,7 @@ details[open] details:not([open])>summary {
     top: 60px;
     bottom: 150px;
     padding: 0;
+    width: 100%;
     /* overflow-y: auto; */
 }
 
@@ -385,6 +387,7 @@ footer a:hover {
 
     .underheader {
         overflow-y: initial;
+        width: 100%;
     }
 
     .left-paine {
@@ -475,6 +478,7 @@ footer a:hover {
         overflow-y: auto;
         display: flex;
         padding: 0;
+        width: 100%;
     }
 
     footer {
