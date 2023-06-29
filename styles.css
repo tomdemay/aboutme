@@ -3,6 +3,7 @@
     --secondary-color: rgb(121, 212, 241);
 }
 
+/* hide elements in mobile view */
 .headercontent, 
 .left-pane > .links, 
 .cover-letter

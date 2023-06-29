@@ -7,6 +7,7 @@
     visibility: hidden;
 }
 
+/* hide everything that shouldn't print */
 header, 
 footer, 
 .cover-letter,
